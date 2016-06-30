@@ -21,9 +21,8 @@
   width: 960px;
   height: 540px;
   position: relative;
-  top: 80px;
+  top: 90px;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, 0);
   display: block;
 }
