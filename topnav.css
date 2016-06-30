@@ -3,11 +3,12 @@ ul.topnav {
   top: 30px;
   right: 40px;
   overflow: hidden;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Fjord One', sans-serif;
   font-weight: bold;
   float: right;
   position: fixed;
   z-index: +1;
+  
 }
 
 ul.topnav li {
@@ -17,7 +18,7 @@ ul.topnav li {
 }
 
 ul.topnav li a {
-  color: rgba(233,233,233,1.00);
+  color: rgba(204,143,0,1.00);
   text-align: center;
   text-decoration: none;
   transition: 0.3s;
@@ -34,6 +35,7 @@ ul.topnav li.icon {
   position: fixed;
   top: 30px;
   right: 10px;
+  transition: 0.7s;
 }
 .press_tiger {
   display: none !important;
@@ -58,19 +60,22 @@ ul.topnav li.icon {
 
 @media screen and (max-width:680px), hanheld {
   ul.topnav.responsive {
-    position: relative;
-    top: 60px;
+    position: absolute;
+    top: 60%;
     background: lightgrey;
     transition: 0.5s;
     border-radius: 5px;
     padding: 2%;
     color: black;
   }
-  ul.topnav.responsive li.icon img{
-    position: relative;
-    right: 0;
-    top: 0;
+  
+  ul.topnav.responsive li.icon{
+    position: fixed;
+    right: 1%;
+    top: 1%;
+    transition: 0.7s; 
   }
+  
   ul.topnav.responsive li {
     float: none;
     display: inline;
