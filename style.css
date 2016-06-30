@@ -6,21 +6,76 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 html,body {
     margin:0;
     padding:0;
+    max-width: 100%;
+    overflow-y: visible;
 }
 
-#header {
-  background-color: white;
+.header1 {
+  background: linear-gradient(rgba(139,139,139,1.00), rgba(0,0,0,0.00));
   margin-top: 0px;
   padding-top: 0px;
+  position: fixed;
+  z-index: +1;
+  min-height: 80px;
+  min-width: 100%;
 }
 
-#header .title_header {
+div.header1 .title_header {
   font-family: 'Lato', sans-serif;
-  color: black;
-  margin-top: 20px;
-  margin-left: 35px;
-  padding-top: 0px;
-  padding-left: 0px;
-  float: left; 
+  color: rgba(233,233,233,1.00);
+  top: 20px;
+  left: 35px;
+  position: fixed;
+  z-index: +1;
 }
 
+#topbar{
+	//background-color: white;
+}
+
+.main_text {
+  font-family: "Lato", sans-serif;
+  position: relative;
+  top: 80px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lower_banner{
+  font-family: "Lato", sans-serif;
+  position: relative;
+  top: 90px;
+}
+.l_banner_text {
+  float: left;
+  margin-left: 5%;
+  white-space: pre;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+    padding: 20px;
+}
+hr.line{
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-top-color: black;
+  left: 0;
+  max-width: 100%;
+}
+#designed_by {
+  float: right;
+  white-space: pre;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  text-align: right;
+  margin-right: 5%;
+  padding: 20px;
+}
+
+@media (max-width:960px), handheld {
+  .main_text p{
+    position:relative;
+    left: 5px;
+    right: 5px;
+  }
+}
