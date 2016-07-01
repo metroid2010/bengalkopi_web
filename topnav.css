@@ -58,7 +58,7 @@ ul.topnav li.icon {
   }
 }
 
-@media screen and (max-width:680px), hanheld {
+@media screen and (max-width:680px), handheld {
   ul.topnav.responsive {
     position: absolute;
     top: 60%;
