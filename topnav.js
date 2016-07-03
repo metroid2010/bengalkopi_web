@@ -1,3 +1,7 @@
-function topnav() {
-        document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
-    }
+
+$(document).ready(function(){
+  $(".icon").click(function(){
+    $(".topnav").toggleClass("responsive");
+  });
+});
+
